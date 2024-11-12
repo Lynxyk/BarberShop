@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DateBDmanager">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/br.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="35.0" layoutY="14.0" text="Data" style="-fx-text-fill: white;">
+            <font>
+                <Font size="55.0" />
+            </font>
+        </Label>
+        <ScrollPane fx:id="ScrollLabel" layoutX="35.0" layoutY="95.0" prefHeight="544.0" prefWidth="1184.0">
+            <content>
+                <AnchorPane fx:id="LabelText" minHeight="0.0" minWidth="0.0" prefHeight="3000.0" prefWidth="1170.0">
+                    <children>
+                        <TableView fx:id="tableAll" prefHeight="3000.0" prefWidth="1170.0">
+                            <columns>
+                                <TableColumn fx:id="col1" prefWidth="98.0" />
+                                <TableColumn fx:id="col2" prefWidth="146.0" />
+                                <TableColumn fx:id="col3" prefWidth="99.0" />
+                                <TableColumn fx:id="col4" prefWidth="138.0" />
+                                <TableColumn fx:id="col5" prefWidth="126.0" />
+                                <TableColumn fx:id="col6" minWidth="9.0" prefWidth="137.0" />
+                                <TableColumn fx:id="col7" prefWidth="127.0" />
+                                <TableColumn fx:id="col8" prefWidth="124.0" />
+                                <TableColumn fx:id="col9" prefWidth="173.0" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

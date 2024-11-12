@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="272.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.AddUsersController">
+   <children>
+      <ImageView fitHeight="272.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/imgonline-com-ua-Resize-sF7d3chSowvjA.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="28.0" text="Add User" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="36.0" layoutY="83.0" promptText="id" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <TextField fx:id="login" layoutX="36.0" layoutY="117.0" promptText="login" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <TextField fx:id="password" layoutX="36.0" layoutY="154.0" promptText="password" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <TextField fx:id="userGroup" layoutX="36.0" layoutY="188.0" promptText="user group" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <TextField fx:id="employeeid" layoutX="36.0" layoutY="222.0" promptText="employee id " style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <Button fx:id="commitId" layoutX="496.0" layoutY="180.0" mnemonicParsing="false" onAction="#commitGo" prefHeight="17.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+         <tooltip>
+            <Tooltip text="Commit" />
+         </tooltip>
+         <font>
+            <Font size="19.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/addUser.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <RadioButton layoutX="222.0" layoutY="87.0" mnemonicParsing="false" text="Supervisor" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="GroupRole" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="222.0" layoutY="121.0" mnemonicParsing="false" text="Staff" textFill="WHITE" toggleGroup="$GroupRole" />
+      <RadioButton layoutX="222.0" layoutY="158.0" mnemonicParsing="false" text="Manager" textFill="WHITE" toggleGroup="$GroupRole" />
+      <RadioButton layoutX="222.0" layoutY="192.0" mnemonicParsing="false" text="Analyst" textFill="WHITE" toggleGroup="$GroupRole" />
+      <Label fx:id="success" layoutX="310.0" layoutY="154.0" prefHeight="43.0" prefWidth="196.0" textFill="#1ad33f">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="addId" layoutX="358.0" layoutY="208.0" mnemonicParsing="false" onAction="#AddGo" prefHeight="53.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+         <tooltip>
+            <Tooltip text="Add" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/accept.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="rollBackId" layoutX="418.0" layoutY="214.0" mnemonicParsing="false" onAction="#rollbackGo" prefHeight="0.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+         <tooltip>
+            <Tooltip text="Rollback" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/multiply.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

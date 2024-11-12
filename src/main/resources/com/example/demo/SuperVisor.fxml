@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.SuperVisorController">
+    <children>
+      <ImageView fitHeight="720.0" fitWidth="1313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/br.png" />
+         </image>
+      </ImageView>
+        <Label layoutX="35.0" layoutY="14.0" text="Supervisor" style="-fx-text-fill: white;">
+            <font>
+                <Font size="55.0" />
+            </font>
+        </Label>
+        <Label layoutX="111.0" layoutY="95.0" text="Клиенты " style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findClientid" layoutX="842.0" layoutY="123.0" mnemonicParsing="false" onAction="#findClient" style="-fx-background-color: transparent;"><graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor> </Button>
+        <Button fx:id="findBookingid" layoutX="792.0" layoutY="176.0" mnemonicParsing="false" onAction="#findBooking" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <TextField fx:id="clientFIO" layoutX="224.0" layoutY="124.0" prefHeight="25.0" prefWidth="247.0" promptText="ФИО" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="clientPyhone" layoutX="481.0" layoutY="123.0" prefHeight="25.0" prefWidth="247.0" promptText="номер тел." style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <Label layoutX="111.0" layoutY="149.0" text="Заказы" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="BookingidClient" layoutX="685.0" layoutY="176.0" prefHeight="25.0" prefWidth="101.0" promptText="клиент id" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BookingServiceId" layoutX="225.0" layoutY="177.0" prefHeight="25.0" prefWidth="101.0" promptText="id услуги" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BookingDate" layoutX="335.0" layoutY="177.0" prefHeight="25.0" prefWidth="101.0" promptText="дата" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BookingidEmployee" layoutX="448.0" layoutY="177.0" prefHeight="25.0" prefWidth="101.0" promptText="id мастера" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BookingratingEmployee" layoutX="560.0" layoutY="176.0" prefHeight="25.0" prefWidth="111.0" promptText="рейтинг мастера" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="clientId" layoutX="111.0" layoutY="123.0" prefHeight="25.0" prefWidth="101.0" promptText="id клиента" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BookingId" layoutX="111.0" layoutY="177.0" prefHeight="25.0" prefWidth="101.0" promptText="id заказа" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="clientStatus" layoutX="735.0" layoutY="124.0" prefHeight="25.0" prefWidth="101.0" promptText="статус" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <Label layoutX="111.0" layoutY="202.0" text="Бонусы клиентов" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findBonusid" layoutX="420.0" layoutY="229.0" mnemonicParsing="false" onAction="#findBonus" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Label layoutX="108.0" layoutY="254.0" text="Работники" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findEmployeeId" layoutX="1024.0" layoutY="282.0" mnemonicParsing="false" onAction="#findEmployee" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <Label layoutX="108.0" layoutY="307.0" text="Заведение" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findEstablishmentId" layoutX="836.0" layoutY="335.0" mnemonicParsing="false" onAction="#findEstablishment" style="-fx-background-color: transparent;"><graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor> </Button>
+        <Label layoutX="113.0" layoutY="360.0" text="Чеки" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findReceiptId" layoutX="596.0" layoutY="388.0" mnemonicParsing="false" onAction="#findReceipt" style="-fx-background-color: transparent;"><graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor> </Button>
+        <Label layoutX="113.0" layoutY="413.0" text="Услуги" style="-fx-text-fill: white;">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="findServiceid" layoutX="397.0" layoutY="441.0" mnemonicParsing="false" onAction="#findService" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/find.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+        <TextField fx:id="BonusId" layoutX="111.0" layoutY="229.0" prefHeight="25.0" prefWidth="80.0" promptText="id бонусов" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BonusClientId" layoutX="212.0" layoutY="229.0" prefHeight="25.0" prefWidth="80.0" promptText="id клиента" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="BonusSize" layoutX="305.0" layoutY="229.0" prefHeight="25.0" prefWidth="111.0" promptText="кол-во бонусов" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeId" layoutX="111.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="id работнкиа" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeFio" layoutX="204.0" layoutY="282.0" prefHeight="25.0" prefWidth="143.0" promptText="ФИО" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeePosition" layoutX="358.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="должность" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeePhone" layoutX="459.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="номер тел." style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeExperence" layoutX="556.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="стаж" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeSalary" layoutX="649.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="З/П" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeInfo" layoutX="742.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="инфо" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeAge" layoutX="836.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="возраст" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="employeeRating" layoutX="930.0" layoutY="282.0" prefHeight="25.0" prefWidth="87.0" promptText="рейтинг" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentId" layoutX="111.0" layoutY="335.0" prefHeight="25.0" prefWidth="87.0" promptText="id заведения" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentType" layoutX="209.0" layoutY="335.0" prefHeight="25.0" prefWidth="101.0" promptText="тип заведения" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentAddress" layoutX="315.0" layoutY="335.0" prefHeight="25.0" prefWidth="101.0" promptText="адрес" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentPostalCode" layoutX="423.0" layoutY="335.0" prefHeight="25.0" prefWidth="132.0" promptText="почт. индекс" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentPhone" layoutX="558.0" layoutY="335.0" prefHeight="25.0" prefWidth="132.0" promptText="номер тел." style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="EstablishmentNumberEmpl" layoutX="699.0" layoutY="335.0" prefHeight="25.0" prefWidth="132.0" promptText="кол-во работников" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="receiptId" layoutX="111.0" layoutY="388.0" prefHeight="25.0" prefWidth="87.0" promptText="id чека" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="receiptClientId" layoutX="209.0" layoutY="388.0" prefHeight="25.0" prefWidth="87.0" promptText="id клиента" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="receiptIdEstablishment" layoutX="304.0" layoutY="388.0" prefHeight="25.0" prefWidth="87.0" promptText="id заведения" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="receiptIdBooking" layoutX="402.0" layoutY="388.0" prefHeight="25.0" prefWidth="87.0" promptText="id заказа" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="receiptPrice" layoutX="499.0" layoutY="388.0" prefHeight="25.0" prefWidth="87.0" promptText="цена" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="serviceId" layoutX="113.0" layoutY="441.0" prefHeight="25.0" prefWidth="87.0" promptText="id услуги" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="servicePrice" layoutX="304.0" layoutY="441.0" prefHeight="25.0" prefWidth="87.0" promptText="цена" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <TextField fx:id="serviceName" layoutX="209.0" layoutY="441.0" prefHeight="25.0" prefWidth="87.0" promptText="наим. услуги" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+        <Button layoutX="1069.0" layoutY="282.0" mnemonicParsing="false" onAction="#editEmployee" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/edit.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor> </Button>
+        <Button layoutX="880.0" layoutY="335.0" mnemonicParsing="false" onAction="#editEstablishment" style="-fx-background-color: transparent;"> <graphic>
+            <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/edit.png" />
+                </image>
+            </ImageView>
+        </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
+      <Button fx:id="discId" layoutX="1187.0" layoutY="643.0" mnemonicParsing="false" onAction="#discGo" prefHeight="70.0" prefWidth="93.0" style="-fx-background-color: transparent;">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

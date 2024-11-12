@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.HelloController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/br.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="334.0" fitWidth="406.0" layoutX="473.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/barber.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="314.0" fitWidth="755.0" layoutX="356.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Загрузки/fotor_2023-6-4_22_13_8-transformed.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginA" layoutX="328.0" layoutY="481.0" prefHeight="34.0" prefWidth="624.0" promptText="Введите логин" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <PasswordField fx:id="passWordA" layoutX="328.0" layoutY="529.0" prefHeight="34.0" prefWidth="624.0" promptText="Введиите пароль" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5; -fx-font-family: 'Comic Sans MS', cursive, sans-serif;" />
+      <Button fx:id="buttonNext" layoutX="965.0" layoutY="492.0" mnemonicParsing="false" onAction="#goNextWindow" prefHeight="87.0" prefWidth="69.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/sign.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
